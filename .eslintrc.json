@@ -1,8 +1,9 @@
 {
-  "extends": ["airbnb"],
+  "extends": ["react-app"],
   "parser": "typescript-eslint-parser",
-  "plugins": ["typescript"],
-  "rules": {
-    "typescript/rule-name": "error"
-  }
+  "parserOptions": {
+    "jsx": true,
+    "useJSXTextNode": true
+  },
+  "plugins": ["typescript"]
 }
