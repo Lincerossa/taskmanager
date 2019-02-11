@@ -28,7 +28,11 @@
       }
     },
     "lint-staged": {
-      "*.{js,json,css,md, tsx}": ["prettier --write", "git add"]
+      "*.{js,json,css,md, ts, tsx}": ["prettier --write", "git add"]
+    },
+    "prettier": {
+      "printWidth": 80,
+      "trailingComma": "es5"
     }
   },
   "eslintConfig": {
