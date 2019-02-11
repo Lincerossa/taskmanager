@@ -3,13 +3,13 @@ import React, { useState } from 'react'
 import * as S from './styles'
 import Cta from '../Cta'
 
-interface CardProps {
-  title: string
-  description: string
+interface CardProps<T> {
+  title: T,
+  description: T
 }
 
 
-function Card(props: CardProps){
+function Card(props: CardProps<Number|String>){
   const [isDescriptionVisible, setIsDescriptionVisible] = useState<boolean | null>(null)
   function toggleDescription(){
     setIsDescriptionVisible(!isDescriptionVisible)
