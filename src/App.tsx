@@ -11,6 +11,6 @@ const store = createStore(reducer, composeWithDevTools());
 
 export default () => (
   <Provider store={store}>
-    <Example />
+    <Example message="Hello world" />
   </Provider>
 );

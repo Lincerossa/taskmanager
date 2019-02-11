@@ -1,9 +1,13 @@
 import React from "react";
 import styled from "styled-components";
 
-function Example(props) {
-  return <Container>Example</Container>;
-}
+type props = {
+  message: string;
+};
+
+const Example: React.FC<props> = ({ message }) => (
+  <Container>Example</Container>
+);
 
 export default Example;
 

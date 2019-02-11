@@ -4,11 +4,13 @@ to: src/components/<%=name%>/<%=name%>.tsx
 import React from 'react'
 import styled from 'styled-components'
 
-function <%=name%>(props) {
-  return (
-    <Container><%=name%></Container>
-  )
+type props = {
+  message: string
 }
+
+const <%=name%>: React.FC<props> = ({ message }) => (
+  <Container><%=name%></Container>
+);
 
 export default <%=name%>
 
