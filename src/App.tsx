@@ -1,29 +1,14 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
+import { createStore, applyMiddleware } from "redux";
+import { Provider } from "react-redux";
+import { composeWithDevTools } from "redux-devtools-extension";
 
-import { Card } from './Components'
+import reducer from "./redux";
 
+const store = createStore(reducer, composeWithDevTools());
 
-const App = () => {
-
-
-  return(
-    <div>
-    <Card 
-      title="titolo" 
-      description={2}
-    />
-    <Card 
-      title="titolo" 
-      description="Lorem ipsum dolor sit amet"
-    />
-    </div>
-
-  )
-
-
-}
-
-
-
-
-export default App;
+export default () => (
+  <Provider store={store}>
+    <div>APP</div>
+  </Provider>
+);
