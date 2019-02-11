@@ -7,7 +7,10 @@ const App = () => {
 
 
   return(
-    <Card />
+    <Card 
+      title="titolo" 
+      description="Lorem ipsum dolor sit amet"
+    />
   )
 
 
