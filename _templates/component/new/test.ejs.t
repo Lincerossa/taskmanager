@@ -10,7 +10,8 @@ import <%=name%> from '../<%=name%>';
 describe("<%=name%>", () => {
     test("Has expected text", () => {
 
-        expect(render(<<%=name%> message="Test message" />))
+      const { container } = render(<<%=name%> message="Test message" />);
+      expect(container).toHaveTextContent("Test message");
 
     })
-})npm
+})

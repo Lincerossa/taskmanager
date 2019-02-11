@@ -5,7 +5,8 @@ import "jest-dom/extend-expect";
 import Example from "../Example";
 
 describe("Example", () => {
-  test("Test", () => {
-    expect(render(<Example message="Test message" />));
+  test("Has expected text", () => {
+    const { container } = render(<Example message="Test message" />);
+    expect(container).toHaveTextContent("Test message");
   });
 });

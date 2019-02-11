@@ -6,7 +6,7 @@ type props = {
 };
 
 const Example: React.FC<props> = ({ message }) => (
-  <Container>Example</Container>
+  <Container>Example {message}</Container>
 );
 
 export default Example;

@@ -9,7 +9,7 @@ type props = {
 }
 
 const <%=name%>: React.FC<props> = ({ message }) => (
-  <Container><%=name%></Container>
+  <Container><%=name%> {message}</Container>
 );
 
 export default <%=name%>
