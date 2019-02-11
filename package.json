@@ -28,13 +28,13 @@
     }
   },
   "lint-staged": {
-    "*.{js,json,css,tsx,ts}": [
+    "*.{js,json,css,tsx}": [
       "prettier --write",
       "git add"
     ]
   },
   "prettier": {
-    "printWidth": 20,
+    "printWidth": 80,
     "trailingComma": "es5"
   },
   "browserslist": [
