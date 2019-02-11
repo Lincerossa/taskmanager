@@ -23,7 +23,8 @@
   "lint-staged": {
     "*.{js,json,css,tsx,ts}": [
       "prettier --write",
-      "git add"
+      "git add",
+      "jest --bail --findRelatedTests"
     ]
   },
   "prettier": {
