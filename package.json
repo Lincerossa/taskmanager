@@ -34,7 +34,7 @@
     ]
   },
   "prettier": {
-    "printWidth": 80,
+    "printWidth": 40,
     "trailingComma": "es5"
   },
   "browserslist": [
