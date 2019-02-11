@@ -1,15 +1,16 @@
 ---
-to: src/components/<%=name%>/test/<%=name%>.js
+to: src/components/<%=name%>/__tests__/<%=name%>.js
 ---
-import React from 'react'
-import { render } from 'react-testing-library'
+import React from 'react';
+import { render } from 'react-testing-library';
+import "jest-dom/extend-expect";
 
-import <%=name%> from '../<%=name%>'
+import <%=name%> from '../<%=name%>';
 
 describe("<%=name%>", () => {
-    test("Test", () => {
+    test("Has expected text", () => {
 
-        expect(render(<<%=name%> />))
+        expect(render(<<%=name%> message="Test message" />))
 
     })
-})
+})npm

@@ -6,8 +6,6 @@ import Example from "../Example";
 
 describe("Example", () => {
   test("Test", () => {
-    expect(render(<Example message={"test message"} />)).toHaveTextContent(
-      "test message"
-    );
+    expect(render(<Example message="Test message" />));
   });
 });
