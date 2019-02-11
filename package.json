@@ -9,6 +9,7 @@
     "@types/react-dom": "16.8.0",
     "husky": "^1.3.1",
     "lint-staged": "^8.1.3",
+    "prettier": "^1.16.4",
     "react": "^16.8.1",
     "react-dom": "^16.8.1",
     "react-scripts": "2.1.4",
@@ -22,18 +23,19 @@
     "eject": "react-scripts eject"
   },
   "husky": {
-    "husky": {
-      "hooks": {
-        "pre-commit": "lint-staged"
-      }
-    },
-    "lint-staged": {
-      "*.{js,json,css,md, ts, tsx}": ["prettier --write", "git add"]
-    },
-    "prettier": {
-      "printWidth": 80,
-      "trailingComma": "es5"
+    "hooks": {
+      "pre-commit": "lint-staged"
     }
+  },
+  "lint-staged": {
+    "*.{js,json,css,tsx}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "prettier": {
+    "printWidth": 80,
+    "trailingComma": "es5"
   },
   "eslintConfig": {
     "extends": "react-app"
