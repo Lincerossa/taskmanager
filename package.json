@@ -5,6 +5,7 @@
   "dependencies": {
     "@types/react-redux": "^7.0.1",
     "@types/styled-components": "^4.1.8",
+    "cross-env": "^5.2.0",
     "hygen": "^2.1.2",
     "jest-dom": "^3.1.1",
     "react": "^16.8.1",
@@ -32,8 +33,8 @@
   "lint-staged": {
     "*.{js,json,css,tsx,ts}": [
       "prettier --write",
-      "jest --bail --findRelatedTests",
-      "git add"
+      "git add",
+      "cross-env CI=true npm test -- --passWithNoTests"
     ]
   },
   "prettier": {
