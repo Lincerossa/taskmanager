@@ -5,10 +5,12 @@ import { composeWithDevTools } from "redux-devtools-extension";
 
 import reducer from "./redux";
 
+import Example from "./components/Example";
+
 const store = createStore(reducer, composeWithDevTools());
 
 export default () => (
   <Provider store={store}>
-    <div>APP</div>
+    <Example />
   </Provider>
 );
